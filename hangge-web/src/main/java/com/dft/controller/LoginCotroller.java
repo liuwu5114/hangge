@@ -45,7 +45,7 @@ public class LoginCotroller extends BaseCotroller {
      * @Param: [userInfo]
      * @Return: java.lang.String
      * @Author: 刘武
-     * @Date: 2021/5/14 9:03
+     * @Date: 2021/5/14 9:03g
      */
     @PostMapping(value = "login")
     public String login(UserCommand command, ModelMap map) {
