@@ -1,0 +1,28 @@
+
+server:
+  port: 8080 #端口
+  jsp-servlet: #配置热部署
+    init-parameters:
+      development: true
+
+
+spring:
+  datasource: #链接数据库
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+    password:
+  mvc: #配置使用jsp界面
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.dao.model  # 注意：对应实体类的路径
+  configuration:
+    #org.apache.ibatis.logging.stdout.StdOutImpl 控制台打印sql语句方便调试sql语句执行错误
+    #org.apache.ibatis.logging.log4j2.Log4j2Impl:这个不在控制台打印查询结果,但是在log4j中打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    mapUnderscoreToCamelCase: true # 开启驼峰命名转换法

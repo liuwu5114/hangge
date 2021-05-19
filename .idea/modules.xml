@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hangge.iml" filepath="$PROJECT_DIR$/hangge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hangge-base/hangge-base.iml" filepath="$PROJECT_DIR$/hangge-base/hangge-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hangge-dao/hangge-dao.iml" filepath="$PROJECT_DIR$/hangge-dao/hangge-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hangge-service/hangge-service.iml" filepath="$PROJECT_DIR$/hangge-service/hangge-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hangge-web/hangge-web.iml" filepath="$PROJECT_DIR$/hangge-web/hangge-web.iml" />
+    </modules>
+  </component>
+</project>
